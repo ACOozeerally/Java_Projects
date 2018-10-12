@@ -1,0 +1,20 @@
+
+public class Car extends Vehicles  {
+
+	
+
+		public void vehicleName() {
+			System.out.println("Enter the name of your car: ");
+		}
+		
+		public void vehiclePrice() {
+			System.out.println("Enter the price of your car: ");
+		}
+		
+		public void numberOfWheels() {
+			System.out.println("Enter the number of wheels your car has: ");
+		}
+
+	
+
+}

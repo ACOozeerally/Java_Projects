@@ -1,0 +1,32 @@
+
+public class vehicleRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Car car = new Car("Adil's Car", 4, "Audi");
+		
+		car.name = "Adil's Car";
+		car.setPrice(10000);
+		//car
+		
+		car.vehicleName();
+		car.getVehiclePrice();
+		car.numberOfWheels();
+		
+		System.out.println(car.name);
+		System.out.println(car.getPrice());
+		System.out.println(car.wheels);
+		
+		
+		
+		Jet jet = new Jet("Adonay's Jet", 2);
+		
+		jet.vehicleName();
+		jet.vehiclePrice();
+		jet.numberOfWheels();
+		
+	}
+
+	
+}

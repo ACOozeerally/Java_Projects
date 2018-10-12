@@ -1,0 +1,17 @@
+
+public class LambdaString {
+
+	static String checky = "match";
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		CheckString checker = s -> s = checky;
+		
+	}
+	
+	interface CheckString {
+		String Check(String s);
+	}
+
+}

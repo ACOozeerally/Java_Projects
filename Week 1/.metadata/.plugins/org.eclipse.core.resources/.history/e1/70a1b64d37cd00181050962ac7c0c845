@@ -1,0 +1,20 @@
+
+public class Car extends Vehicles  {
+
+	
+
+		public void vehicleName() {
+			
+		}
+		
+		public void vehiclePrice() {
+			
+		}
+		
+		public void numberOfWheels() {
+			
+		}
+
+	
+
+}

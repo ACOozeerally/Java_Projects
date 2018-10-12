@@ -1,0 +1,27 @@
+
+public class Jet extends Vehicles {
+
+	public Jet(String name, int wheels, int price) {
+		super(name, wheels, price);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void vehicleName() {
+				
+	}
+	
+	public int vehiclePrice() {
+		return getPrice();
+				
+	}
+	
+	public void numberOfWheels() {
+
+	}
+
+}

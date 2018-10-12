@@ -1,0 +1,16 @@
+
+public class LambdaString {
+	
+	CheckString checker = (one, two) -> one.equals(two);
+	System.out.println(checker);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	interface CheckString {
+		boolean Check(String one, String two);
+	}
+
+}

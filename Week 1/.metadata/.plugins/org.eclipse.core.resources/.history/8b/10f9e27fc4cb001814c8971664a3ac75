@@ -1,0 +1,25 @@
+
+public class PrintNumbers {
+	public static void main(String [] args) {
+		PrintNumbers printNums = new PrintNumbers();
+		printNums.tenNumbers();
+		printNums.betweenHundredAndThousand();
+	}
+	
+	public int [] tenNumbers() {
+		int [] myArr = new int [10];
+		for (int i = 0; i <= 10 ; i++) {
+			System.out.println(i);
+			myArr[i] = i;
+		}
+		return myArr;
+	}
+	
+	public void betweenHundredAndThousand() {
+		for (int i= 100; i < 1000; i++) {
+			System.out.println(i);
+		}
+	}
+	
+	
+}

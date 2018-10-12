@@ -1,0 +1,14 @@
+
+public class Car extends Vehicles  {
+	
+	private String brand;
+	public char[] getVehiclePrice;
+	
+	public Car(String name, int wheels, String brand) {
+		super(name, wheels);
+	}
+
+
+	
+
+}

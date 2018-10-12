@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class Collections {
+
+	static int[] numbers = new int[1001];
+	static List<Integer> numbersList = Arrays.asList();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		addNumbers();
+		System.out.println(Arrays.toString(numbers));
+		addNumbersList();
+
+	}
+
+	static int[] addNumbers() {
+
+		for (int i = 0; i <= 1000; i++) {
+			numbers[i] = i + 100;
+		}
+		return numbers;
+
+	}
+	
+	static void addNumbersList() {
+		int result;
+		for (int i = 0; i <= 1000; i++) {
+			  result = i + 100;
+			numbersList.add(result);
+		}
+		System.out.println(numbersList);
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Jet extends Vehicles {
+
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

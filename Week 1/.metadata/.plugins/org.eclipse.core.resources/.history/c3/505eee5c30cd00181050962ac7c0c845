@@ -1,0 +1,15 @@
+
+public class Cat extends Animal {
+	
+	public static Animal cat = new Animal();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		cat.numberOfLegs();
+		
+
+	}
+	
+	
+}

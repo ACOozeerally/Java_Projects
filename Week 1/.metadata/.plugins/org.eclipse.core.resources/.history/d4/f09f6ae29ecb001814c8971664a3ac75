@@ -1,0 +1,17 @@
+package adil.com.ArrayProblem;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ArrayProblem {
+
+	static List<Integer> numbers = Arrays.asList(3,2,2,3,7,3,5,9,8,12);
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(numbers);
+		
+	}
+
+}

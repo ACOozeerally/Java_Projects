@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Collections {
+
+	static List<Integer> numbers = new ArrayList<Integer>();
+	static int number;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		addNumbers();
+	}
+	
+	
+	static void addNumbers() {
+		
+		for(int i = 0; i < 100; i++) {
+			number = i;
+			numbers.add(number);
+		}
+		System.out.println(numbers);
+	}
+
+}

@@ -1,0 +1,35 @@
+
+public abstract class Vehicles {
+
+	public String name;
+	public int wheels;
+	public int price;
+	
+	
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+
+	public String vehicleName(String name) {
+		return name;
+		
+		
+	}
+	
+	public int numberOfWheels(int wheels) {
+		return wheels;
+		
+	}
+	
+	public int vehiclePrice(int price) {
+		return price;
+	}
+	
+	
+	
+	
+	
+}

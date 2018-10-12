@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Animal {
+	
+	public int legs;
+	public String bloodType;
+	public String foodType;
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public int numberOfLegs() {
+			System.out.println("Please enter the number of legs this animal has: ");
+			Scanner legScanner = new Scanner(System.in);
+			legs = legScanner.nextInt();
+			
+			if (legs < 4) {
+				System.out.println("A cat must have four legs!");
+			}
+			return legs;
+			
+		
+	}
+	
+
+}

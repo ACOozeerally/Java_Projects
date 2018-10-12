@@ -1,0 +1,17 @@
+package adil.com.Streams;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Streams {
+	
+	static List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5, 9, 8, 12);
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		numbers.stream().filter(i -> i % 2 == 0).forEach(System.out::println);
+
+	}
+
+}

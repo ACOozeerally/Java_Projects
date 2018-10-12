@@ -1,0 +1,41 @@
+
+public abstract class Vehicles {
+
+	public String name;
+	public int wheels;
+	private int price;
+	
+	public Vehicles(String name, int wheels) {
+		this.name = name;
+		this.wheels = wheels;
+	}
+
+	
+
+	public String vehicleName(String name) {
+		return name;
+		
+	}
+	
+	public int numberOfWheels(int wheels) {
+		return wheels;
+	}
+	
+
+	public int getVehiclePrice() {
+		return price;
+	}
+
+
+	public void setVehiclePrice(int price) {
+		this.price = price;
+	}
+
+
+
+	
+	
+	
+	
+	
+}

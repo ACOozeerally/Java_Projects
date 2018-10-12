@@ -1,0 +1,11 @@
+
+public class Cat extends Animal {
+	
+
+	
+	public void makeNoise() {
+		// TODO Auto-generated method stub
+		super.makeNoise();
+	}
+	
+}

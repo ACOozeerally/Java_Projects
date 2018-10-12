@@ -1,0 +1,29 @@
+
+public class Motorcycle extends Vehicles  {
+
+	public Motorcycle(String name, int wheels) {
+		super(name, wheels);
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	public void vehicleName() {
+//		System.out.println("Enter the name of your motorcycle: ");
+	}
+	
+	public int vehiclePrice() {
+		System.out.println("Enter the price of your motorcycle: ");
+		return price;
+	}
+	
+	public void numberOfWheels() {
+		System.out.println("Enter the number of wheels your motorcycle has: ");
+	}
+	
+}
