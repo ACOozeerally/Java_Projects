@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Library {
+
+	List<LibraryItems> libraryItemsList = new ArrayList<LibraryItems>();
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+	public void setItemsList(List<LibraryItems> libraryItems) {
+		this.libraryItemsList = libraryItems;
+	}
+
+	public List<LibraryItems> getItemsList() {
+		return libraryItemsList;
+	}
+
+	public void addItems(LibraryItems items) {
+		libraryItemsList.add(items);
+	}
+
+	public void removeItems(LibraryItems items) {
+		libraryItemsList.remove(items);
+	}
+	
+	
+	
+
+}

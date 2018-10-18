@@ -1,0 +1,9 @@
+
+public class Dissertations extends LibraryItems {
+
+	public Dissertations(String author, int yearPublished, int itemID) {
+		super(author, yearPublished, itemID);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,38 @@
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Books Alchemist = new Books("The Alchemist", "Paulo Coelho", 1988, 1001, "Hard Back");
+		Books Monk = new Books("The Monk Who Sold His Ferrari", "Robin Sharma", 1996, 1002, "Paper Back");
+
+		Maps Mauritius = new Maps("Mauritius Map", "Mr. Mauritius", 1900, 1003, false);
+		Maps UK = new Maps("United Kingdom Map", "Mr. UK", 1944, 1004, true);
+
+		Dissertations MathsWiz = new Dissertations("Maths Wiz", "Adil Oozeerally", 2018, 1005, "Digital");
+		Dissertations Breathe = new Dissertations("Breathe", "Leon Xavier", 2018, 1006, "Physical");
+
+		LibraryMembers Adil = new LibraryMembers("Adil Oozeerally", 1);
+		LibraryMembers Adonay = new LibraryMembers("Adonay Ghebremedhin", 2);
+		LibraryMembers Ahmed = new LibraryMembers("Ahmed Osman", 3);
+
+		Library library = new Library();
+
+		System.out.println("The Library contains the following items: \n");
+		library.addItems(Alchemist);
+		library.addItems(Monk);
+		library.addItems(Mauritius);
+		library.addItems(UK);
+		library.addItems(MathsWiz);
+		library.addItems(Breathe);
+		library.libraryItemsList.forEach(i -> System.out.println(i.getName() + "(" + i.getClass() + ")"));
+
+		System.out.println("\nThe library has the following members: \n");
+		library.addMembers(Adil);
+		library.addMembers(Adonay);
+		library.addMembers(Ahmed);
+		library.libraryMembersList.forEach(i -> System.out.println(i.getMemberName() + ", ID: " + i.getMemberID()));
+
+	}
+
+}

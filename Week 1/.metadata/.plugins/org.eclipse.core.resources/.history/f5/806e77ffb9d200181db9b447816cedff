@@ -1,0 +1,9 @@
+import LibraryItems.java.lang.Object;
+
+public class Books extends Object {
+
+	public Books() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

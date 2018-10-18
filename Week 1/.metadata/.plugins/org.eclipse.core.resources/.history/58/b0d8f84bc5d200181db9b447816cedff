@@ -1,0 +1,23 @@
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Books Alchemist = new Books("The Alchemist", "Paulo Coelho", 1988, 1001, "Hard Back");
+
+
+
+
+		LibraryMembers Adil = new LibraryMembers("Adil Oozeerally", 1);
+
+		Library library = new Library();
+
+		System.out.println("The Library contains the following items: ");
+		library.addItems(Alchemist);
+		library.libraryItemsList.forEach(i -> System.out.println(i.getName()));
+		library.addMembers(Adil);
+		library.libraryMembersList.forEach(i -> System.out.println(i.getMemberName()));
+
+	}
+
+}

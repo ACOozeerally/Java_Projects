@@ -1,0 +1,51 @@
+public class LibraryItems {
+
+	private String name = " ";
+	private String author = " ";
+	private int yearPublished;
+	private int itemID;
+
+	public LibraryItems(String name, String author, int yearPublished, int itemID) {
+		this.name = name;
+		this.author = author;
+		this.yearPublished = yearPublished;
+		this.itemID = itemID;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setYearPublished(int yearPublished) {
+		this.yearPublished = yearPublished;
+	}
+
+	public int getYearPublished() {
+		return yearPublished;
+	}
+
+	public void setItemID(int itemID) {
+		this.itemID = itemID;
+	}
+
+	public int getItemID() {
+		return itemID;
+	}
+	
+
+		
+	}
+
+

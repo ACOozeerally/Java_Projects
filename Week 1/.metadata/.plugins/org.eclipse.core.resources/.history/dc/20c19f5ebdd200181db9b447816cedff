@@ -1,0 +1,30 @@
+public class Maps extends LibraryItems {
+	
+	private Boolean canCopy = true;
+
+	public Maps(String author, int yearPublished, int itemID, Boolean canCopy) {
+		super(author, yearPublished, itemID);
+		this.canCopy = canCopy;
+	}
+	
+	public void setCanCopy(Boolean canCopy) {
+		this.canCopy = canCopy;
+	}
+
+	public Boolean getCanCopy() {
+		return canCopy;
+	}
+
+	public String getMapsAuthor() {
+		return getAuthor();
+	}
+	
+	public int getMapsYearPublished() {
+		return getYearPublished();
+	}
+	
+	public int getMapsItemID() {
+		return getItemID();
+	}
+
+}

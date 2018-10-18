@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Library {
+
+	List<LibraryItems> libraryItemsList = new ArrayList<LibraryItems>();
+	List<LibraryMembers> libraryMembersList = new ArrayList<LibraryMembers>();
+	List<LibraryItems> libraryCheckOutList = new ArrayList<LibraryItems>();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+	public void setItemsList(List<LibraryItems> libraryItems) {
+		this.libraryItemsList = libraryItems;
+	}
+
+	public List<LibraryItems> getItemsList() {
+		return libraryItemsList;
+	}
+
+	public void addItems(LibraryItems items) {
+		libraryItemsList.add(items);
+	}
+
+	public void removeItems(LibraryItems items) {
+		libraryItemsList.remove(items);
+	}
+
+	public void setMembersList(List<LibraryMembers> members) {
+		this.libraryMembersList = members;
+	}
+
+	public List<LibraryMembers> getMembersList() {
+		return libraryMembersList;
+	}
+
+	public void addMembers(LibraryMembers members) {
+		libraryMembersList.add(members);
+	}
+
+	public void removeMembers(LibraryMembers members) {
+		libraryMembersList.remove(members);
+	}
+
+}

@@ -1,0 +1,7 @@
+
+public class LibraryMembers {
+	
+	private String name = " ";
+	private int memberID;
+
+}

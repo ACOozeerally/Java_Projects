@@ -1,0 +1,31 @@
+
+public class Dissertations extends LibraryItems {
+
+	private String format = " ";
+
+	public Dissertations(String author, int yearPublished, int itemID, String format) {
+		super(author, yearPublished, itemID);
+		this.format = format;
+	}
+
+	public void setFormat(String format) {
+		this.format = format;
+	}
+
+	public String getFormat() {
+		return format;
+	}
+
+	public String getDissertationsAuthor() {
+		return getAuthor();
+	}
+
+	public int getDissertationsYearPublished() {
+		return getYearPublished();
+	}
+
+	public int getDissertationsItemID() {
+		return getItemID();
+	}
+
+}

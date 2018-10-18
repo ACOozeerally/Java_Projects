@@ -1,0 +1,18 @@
+public class Books extends LibraryItems {
+
+	private String coverType = " ";
+
+	public Books(String author, int yearPublished, int itemID, String coverType) {
+		super(author, yearPublished, itemID);
+		this.coverType = coverType;
+	}
+
+	public void setCoverType(String coverType) {
+		this.coverType = coverType;
+	}
+
+	public String getCoverType() {
+		return coverType;
+	}
+
+}

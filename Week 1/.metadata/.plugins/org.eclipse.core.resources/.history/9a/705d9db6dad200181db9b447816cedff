@@ -1,0 +1,78 @@
+import java.util.Scanner;
+
+public class Runner {
+
+	static Books Alchemist = new Books("The Alchemist", "Paulo Coelho", 1988, 1001, "Hard Back");
+	static Books Monk = new Books("The Monk Who Sold His Ferrari", "Robin Sharma", 1996, 1002, "Paper Back");
+
+	static Maps Mauritius = new Maps("Mauritius Map", "Mr. Mauritius", 1900, 1003, false);
+	static Maps UK = new Maps("United Kingdom Map", "Mr. UK", 1944, 1004, true);
+
+	static Dissertations MathsWiz = new Dissertations("Maths Wiz", "Adil Oozeerally", 2018, 1005, "Digital");
+	static Dissertations Breathe = new Dissertations("Breathe", "Leon Xavier", 2018, 1006, "Physical");
+
+	static LibraryMembers Adil = new LibraryMembers("Adil Oozeerally", 1);
+	static LibraryMembers Adonay = new LibraryMembers("Adonay Ghebremedhin", 2);
+	static LibraryMembers Ahmed = new LibraryMembers("Ahmed Osman", 3);
+
+	static Library library = new Library();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		libraryMenu();
+
+		library.updateItem(Alchemist);
+		library.removeItems(Monk);
+
+		System.out.println("The updated list is: ");
+		library.libraryItemsList.forEach(i -> System.out.println(i.getName() + "(" + i.getClass() + ")"));
+
+	}
+
+	public static void libraryMenu() {
+
+		System.out.println(
+				"Library Menu:\nPlease choose an option:\n (1) List of Library Items\n(2) List of Library Members\n(3)Check Out an Item\n(4) Update an item\n ");
+
+		Scanner optionScanner = new Scanner(System.in);
+		int option = optionScanner.nextInt();
+
+		switch (option) {
+		case 1:
+			System.out.println("The Library contains the following items: \n");
+			library.addItems(Alchemist);
+			library.addItems(Monk);
+			library.addItems(Mauritius);
+			library.addItems(UK);
+			library.addItems(MathsWiz);
+			library.addItems(Breathe);
+			library.libraryItemsList.forEach(i -> System.out.println(i.getName() + "(" + i.getClass() + ")"));
+			break;
+
+		case 2:
+			System.out.println("\nThe library has the following members: \n");
+			library.addMembers(Adil);
+			library.addMembers(Adonay);
+			library.addMembers(Ahmed);
+			library.libraryMembersList.forEach(i -> System.out.println(i.getMemberName() + ", ID: " + i.getMemberID()));
+			break;
+
+		case 3:
+			System.out.println("\nThe following items have been checked out of the Library: \n");
+			library.CheckOut(MathsWiz);
+			library.libraryCheckOutList.forEach(i -> System.out.println(i.getName()));
+
+			break;
+
+		case 4:
+
+			break;
+
+		default:
+			System.out.println("Please enter a correct Menu Option (1,2,3,4):");
+			libraryMenu();
+		}
+	}
+
+}
