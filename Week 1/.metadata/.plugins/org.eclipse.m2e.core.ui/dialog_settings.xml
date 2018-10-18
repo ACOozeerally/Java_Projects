@@ -19,6 +19,18 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -45,6 +57,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="adil.com.Black_Jack"/>
+			<item value="adil.com.BlackJack"/>
 			<item value="adil.com.Streams"/>
 			<item value="adil.com.ArrayProblem"/>
 		</list>
@@ -52,6 +66,8 @@
 			<item value="adil.com"/>
 		</list>
 		<list key="artifactId">
+			<item value="Black_Jack"/>
+			<item value="BlackJack"/>
 			<item value="Streams"/>
 			<item value="ArrayProblem"/>
 		</list>

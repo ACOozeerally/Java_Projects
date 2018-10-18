@@ -128,77 +128,77 @@ public class Game {
 	}
 
 	public void magicCompass() {
-		System.out.println("Enter which direction you would like to go: N, E, S, W: ");
-		Scanner scan3 = new Scanner(System.in);
-		String direction = scan3.nextLine();
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Enter which direction you would like to go: N, E, S, W: ");
+			Scanner scan3 = new Scanner(System.in);
+			String direction = scan3.nextLine();
 
-		switch (direction) {
-		case "N":
-			System.out.println("You head North");
-			player.setXPoisition(player.getXPosition() + 1);
-			System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
-			distance();
-			//System.out.println("Distance from Treasure: " + distance.getXPosition() + "," + distance.getYPosition());
-			System.out.println(totalDistance);
-			if (player.getXPosition() == Treasure.getXPosition() & player.getYPosition() == Treasure.getYPosition()) {
-				System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
-			} else {
-				magicCompass();
-			}
-			break;
+			switch (direction) {
+			case "N":
+				System.out.println("You head North");
+				player.setXPoisition(player.getXPosition() + 1);
+				System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
+				distance();
+				System.out.println("You are " + totalDistance + "m away from the treasure");
+				if (player.getXPosition() == Treasure.getXPosition()
+						& player.getYPosition() == Treasure.getYPosition()) {
+					System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
+				} else {
+					magicCompass();
+				}
+				break;
 
-		case "E":
-			System.out.println("You head East");
-			player.setYPoisition(player.getYPosition() + 1);
-			System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
-			distance();
-			//System.out.println("Distance from Treasure: " + distance.getXPosition() + "," + distance.getYPosition());
-			System.out.println(totalDistance);
-			if (player.getXPosition() == Treasure.getXPosition() & player.getYPosition() == Treasure.getYPosition()) {
-				System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
-			} else {
+			case "E":
+				System.out.println("You head East");
+				player.setYPoisition(player.getYPosition() + 1);
+				System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
+				distance();
+				System.out.println("You are " + totalDistance + "m away from the treasure");
+				if (player.getXPosition() == Treasure.getXPosition()
+						& player.getYPosition() == Treasure.getYPosition()) {
+					System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
+				} else {
+					magicCompass();
+				}
+				break;
+			case "S":
+				System.out.println("You head South");
+				player.setXPoisition(player.getXPosition() - 1);
+				System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
+				distance();
+				System.out.println("You are " + totalDistance + "m away from the treasure");
+				if (player.getXPosition() == Treasure.getXPosition()
+						& player.getYPosition() == Treasure.getYPosition()) {
+					System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
+				} else {
+					magicCompass();
+				}
+				break;
+			case "W":
+				System.out.println("You head West");
+				player.setYPoisition(player.getYPosition() - 1);
+				System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
+				distance();
+				System.out.println("You are " + totalDistance + "m away from the treasure");
+				if (player.getXPosition() == Treasure.getXPosition()
+						& player.getYPosition() == Treasure.getYPosition()) {
+					System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
+				} else {
+					magicCompass();
+				}
+				break;
+			default:
+				System.out.println("Invalid input, only enter: N, E, S, W\n");
 				magicCompass();
 			}
-			break;
-		case "S":
-			System.out.println("You head South");
-			player.setXPoisition(player.getXPosition() - 1);
-			System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
-			distance();
-			//System.out.println("Distance from Treasure: " + distance.getXPosition() + "," + distance.getYPosition());
-			System.out.println(totalDistance);
-			if (player.getXPosition() == Treasure.getXPosition() & player.getYPosition() == Treasure.getYPosition()) {
-				System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
-			} else {
-				magicCompass();
-			}
-			break;
-		case "W":
-			System.out.println("You head West");
-			player.setYPoisition(player.getYPosition() - 1);
-			System.out.println("Your current position is: " + player.getXPosition() + "," + player.getYPosition());
-			distance();
-			//System.out.println("Distance from Treasure: " + distance.getXPosition() + "," + distance.getYPosition());
-			System.out.println(totalDistance);
-			if (player.getXPosition() == Treasure.getXPosition() & player.getYPosition() == Treasure.getYPosition()) {
-				System.out.println("YOU FOUND THE TREASURE!!! YOU WIN THE GAME!!!");
-			} else {
-				magicCompass();
-			}
-			break;
-		default:
-			System.out.println("Invalid input, only enter: N, E, S, W\n");
-			magicCompass();
 		}
 	}
 
 	public void distance() {
 		xDistance = player.getXPosition() - Treasure.getXPosition();
 		yDistance = player.getYPosition() - Treasure.getYPosition();
-		
+
 		totalDistance = Math.sqrt((xDistance * xDistance) + (yDistance * yDistance));
-		
-//		distance.setXPoisition(xDistance);
-//		distance.setYPoisition(yDistance);
+
 	}
 }

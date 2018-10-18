@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Game {
+
+	static Game game = new Game();
+
+	public static void main(String[] args) {
+
+		game.playerSetup();
+
+		game.start();
+
+	}
+
+	public void playerSetup() {
+		Player player = new Player("", 10, 5);
+
+		System.out.println("Enter your name: ");
+
+		Scanner scan = new Scanner(System.in);
+		String name = scan.nextLine();
+
+		player.setName(name);
+
+		System.out.println("Your name is: " + name);
+		System.out.println("Your health is: " + player.getHealth() + "/10");
+		System.out.println("Your Strength is: " + player.getStrength() + "\n");
+		
+
+	}
+
+	public void start() {
+
+		System.out.println("Darkness. Your eyes, slowly opening, allows a flood of light to blind you momentarily"
+				+ "\nWhile your eyes adjust to the bright glare of the blazing sun, you notice a figure moving towards you"
+				+ "\nit's movement is unorthodox, swaying left and right almost dragging itself, as if it's only goal is to get to you...");
+		System.out.println("...you feel your senses rejoin you as the figure is only a few steps away, you see its face"
+				+ "\nand jump backwards, crashing into the ground, you see an old dagger laying on the floor"
+				+ "\n" + "\ndo you pick it up?\nYes or No?");
+
+		Scanner scan1 = new Scanner(System.in);
+		String choice = scan1.nextLine();
+
+		switch (choice) {
+		case "Yes":
+			System.out.println("You pick up the dagger");
+
+			break; // optional
+
+		case "No":
+			System.out.println("You did not pick up the dagger");
+			break; // optional
+
+		// You can have any number of case statements.
+		default:
+			System.out.println();
+			// Statements
+		}
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package adil.com.Library;
+
+public class Maps extends Items {
+
+	public Maps(String author, int yearPublished, int itemID) {
+		super(author, yearPublished, itemID);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void borrowItems() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

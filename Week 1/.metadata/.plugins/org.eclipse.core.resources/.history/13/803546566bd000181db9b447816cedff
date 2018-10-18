@@ -1,0 +1,22 @@
+package adil.com.Library;
+
+public abstract class Items implements borrowItems {
+	
+	private String author;
+	private int yearPublished;
+	private int itemID;
+	
+
+	public Items(String author, int yearPublished, int itemID) {
+		this.author = author;
+		this.yearPublished = yearPublished;
+		this.itemID = itemID;
+		
+	}
+	
+
+	public void borrow() {
+		
+	}
+
+}

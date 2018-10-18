@@ -1,0 +1,26 @@
+package adil.com.Library;
+
+public class Books extends Items {
+
+	public Books(String author, int yearPublished, int itemID) {
+		super(author, yearPublished, itemID);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String type;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+	}
+
+	public void borrowItems() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,60 @@
+package adil.com.Library;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class LibraryTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void bookItemTest() {
+		Books Alchemist = new Books("Paulo Coelho", 1988, 101, "");
+		assertNotNull(Alchemist);
+	}
+
+	@Test
+	public void mapsItemTest() {
+		Maps Ethiopia = new Maps("Adonay G", 2018, 102);
+		assertNotNull(Ethiopia);
+	}
+
+	@Test
+	public void dissertationsItemTest() {
+		Dissertations MathsWiz = new Dissertations("Adil Oozeerally", 2017, 103);
+		assertNotNull(MathsWiz);
+	}
+
+	@Test
+	public void bookBackType() {
+		Books Alchemist = new Books("Paulo Coelho", 1988, 101, " ");
+
+		String backType = " ";
+
+		Alchemist.setBackType("Paper");
+
+		System.out.println(Alchemist.getBackType());
+
+		assertEquals("Paper", Alchemist.getBackType());
+
+	}
+
+	@Test
+	public void mapsCopy() {
+		Maps Ethiopia = new Maps("Adonay G", 2018, 101);
+
+		Boolean copy = null;
+
+		Ethiopia.setCopy = true;
+
+		System.out.println(Ethiopia.getCopy());
+
+		assertEquals(true, Ethiopia.getCopy());
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package adil.com.Library;
+
+public class Maps extends Items {
+
+	private boolean setCopy;
+
+	public Maps(String author, int yearPublished, int itemID) {
+		super(author, yearPublished, itemID);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void borrowItems() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean getCopy() {
+		return setCopy;
+	}
+
+	public void setCopy(boolean setCopy) {
+		this.setCopy = setCopy;
+	}
+
+}
